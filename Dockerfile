@@ -6,7 +6,9 @@ RUN pip install \
     dagster-docker \
     geopandas \
     matplotlib \
-    dagster_duckdb
+    dagster-duckdb \
+    pandas[parquet] \
+    shapely
 
 # Add code location code
 WORKDIR /opt/dagster/app
